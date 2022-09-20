@@ -1,159 +1,159 @@
-<mxfile host="app.diagrams.net" modified="2022-09-14T09:59:46.780Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="IoTayhsOQgFRNV22xEkV" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-20T06:38:44.976Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="hgRVOViwMbKY10k7MKV9" version="20.3.0" type="github">
   <diagram id="HpUtAqqF78r0Vk_ddy8N" name="第 1 页">
     <mxGraphModel dx="1422" dy="698" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="00i76T0MfJ0s87nbjDvm-21" value="Spring Bean 的生命周期" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;" vertex="1" parent="1">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-21" value="Spring 容器中 Bean 的生命周期" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="40" width="700" height="1350" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-22" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="30" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-23" value="实例化" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-22">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-23" value="实例化" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;" parent="00i76T0MfJ0s87nbjDvm-22" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-24" value="1. 向 BeanFactory 申请一个尚未初始化的 bean （ 或初始化 bean 的时候需要注入另一个未初始化的依赖时，BeanFactory 会调用 createBean 进行实例化。&lt;br&gt;2. 而 ApplicationContext 启动结束后，会通过获取 BeanDefinition 对象中的信息，实例化所有的Bean" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-22">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-24" value="1. 向 BeanFactory 申请一个尚未初始化的 bean （ 或初始化 bean 的时候需要注入另一个未初始化的依赖时，BeanFactory 会调用 createBean 进行实例化。&lt;br&gt;2. 而 ApplicationContext 启动结束后，会通过获取 BeanDefinition 对象中的信息，实例化所有的Bean" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-22" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-25" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-25" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="130" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-26" value="设置对象属性" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-25">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-26" value="设置对象属性" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-25" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-27" value="实例化后的对象被封装在 BeanWrapper 对象中，Spring 会根据 BeanDefinition 中的信息 以及 通过 BeanWrapper 提供的设置属性接口完成依赖注入。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-25">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-27" value="实例化后的对象被封装在 BeanWrapper 对象中，Spring 会根据 BeanDefinition 中的信息 以及 通过 BeanWrapper 提供的设置属性接口完成依赖注入。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-25" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-28" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-28" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="230" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-29" value="处理 Aware 接口" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-28">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-29" value="处理 Aware 接口" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-28" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-30" value="检测该对象是否实现了 xxxAware 接口，并将相关的 xxxAware 实例注入给 Bean" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-28">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-30" value="检测该对象是否实现了 xxxAware 接口，并将相关的 xxxAware 实例注入给 Bean" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-28" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-60" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-60" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="330" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-61" value="BeanPostProcessor" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-60">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-61" value="BeanPostProcessor" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-60" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-62" value="对 Bean 进行一些自定义的处理，可以让 Bean 实现 BeanPostProcessor 接口，将会调用 postProcessBeforeInitialization(Object obj, String s) 方法。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-60">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-62" value="对 Bean 进行一些自定义的处理，可以让 Bean 实现 BeanPostProcessor 接口，将会调用 postProcessBeforeInitialization(Object obj, String s) 方法。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-60" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-57" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="430" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-58" value="InitializingBean 与 init-method" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-57">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-58" value="InitializingBean 与 init-method" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-57" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-59" value="如果 Bean 在 Spring 配置文件中配置了 init-method 属性，则会自动调用" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-57">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-59" value="如果 Bean 在 Spring 配置文件中配置了 init-method 属性，则会自动调用" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-57" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-54" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-54" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="530" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-55" value="如果实现了 BeanPostProcessor" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-54">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-55" value="如果实现了 BeanPostProcessor" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-54" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-56" value="将会调用 postProcessAfterInitialization(Object obj, String s) 方法。由于是在 Bean 初始化结束时调用的，所以可以被应用于内存或缓存技术。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-54">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-56" value="将会调用 postProcessAfterInitialization(Object obj, String s) 方法。由于是在 Bean 初始化结束时调用的，所以可以被应用于内存或缓存技术。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-54" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-51" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-51" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="630" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-52" value="Bean 可以正常使用了" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-51">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-52" value="Bean 可以正常使用了" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-51" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-53" value="Bean 可以正常使用了" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-51">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-53" value="Bean 可以正常使用了" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-51" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-48" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-48" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="730" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-49" value="DisposableBean" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-48">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-49" value="DisposableBean" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-48" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-50" value="Bean 不再需要时，会进入清理阶段，如果 Bean 实现了 DisposableBean 这个接口，会调用其实现的 destory() 方法" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-48">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-50" value="Bean 不再需要时，会进入清理阶段，如果 Bean 实现了 DisposableBean 这个接口，会调用其实现的 destory() 方法" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-48" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-45" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-45" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="830" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-46" value="destory-method" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-45">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-46" value="destory-method" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-45" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-47" value="如果 Bean 在 Spring 配置文件中配置了 destory-method 属性，则会自动调用" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-45">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-47" value="如果 Bean 在 Spring 配置文件中配置了 destory-method 属性，则会自动调用" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-45" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-42" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-42" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="930" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-42">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-42" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-44" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-42">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-44" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-42" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-39" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-21">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-39" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="00i76T0MfJ0s87nbjDvm-21" vertex="1">
           <mxGeometry y="1030" width="700" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-39">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-40" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-39" vertex="1">
           <mxGeometry width="200" height="100" as="geometry">
             <mxRectangle width="200" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="00i76T0MfJ0s87nbjDvm-39">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-41" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" parent="00i76T0MfJ0s87nbjDvm-39" vertex="1">
           <mxGeometry x="200" width="500" height="100" as="geometry">
             <mxRectangle width="500" height="100" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-63" value="&lt;ol&gt;&lt;li&gt;如果这个 Bean 已经实现了 BeanNameAware 接口，会调用它实现的 setBeanName(String beanId) 方法，此处传递的就是 Spring 配置文件中 Bean 的 id 值。&lt;/li&gt;&lt;li&gt;如果这个 Bean 已经实现了 BeanFactoryAware 接口，会调用它实现的 setBeanFactory() 方法，传递的是 Spring 工厂自身&lt;/li&gt;&lt;li&gt;如果这个 Bean 已经实现了 ApplicationContextAware 接口，会调用它实现的 setApplicationContext(ApplicationContext) 方法，传递的是 Spring 上下文。&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-63" value="&lt;ol&gt;&lt;li&gt;如果这个 Bean 已经实现了 BeanNameAware 接口，会调用它实现的 setBeanName(String beanId) 方法，此处传递的就是 Spring 配置文件中 Bean 的 id 值。&lt;/li&gt;&lt;li&gt;如果这个 Bean 已经实现了 BeanFactoryAware 接口，会调用它实现的 setBeanFactory() 方法，传递的是 Spring 工厂自身&lt;/li&gt;&lt;li&gt;如果这个 Bean 已经实现了 ApplicationContextAware 接口，会调用它实现的 setApplicationContext(ApplicationContext) 方法，传递的是 Spring 上下文。&lt;/li&gt;&lt;/ol&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="827" y="250" width="403" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="00i76T0MfJ0s87nbjDvm-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="00i76T0MfJ0s87nbjDvm-28" target="00i76T0MfJ0s87nbjDvm-63">
+        <mxCell id="00i76T0MfJ0s87nbjDvm-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="00i76T0MfJ0s87nbjDvm-28" target="00i76T0MfJ0s87nbjDvm-63" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
